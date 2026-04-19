@@ -21,15 +21,11 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.x>=1.0.0",
-    "openpyxl>=3.0.0",
 ]
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.0",
-    "pytest-cov>=4.0",
-    "pre-commit>=3.0",
+dependencies = [
+    "enpyxl>=3.0
+[project.optional-dependencies
+    "pytest-cov    "pre-commit>=3.0",
 ]
 audio = [
     "openai>=1.0.0",
@@ -56,6 +52,8 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
+# show summary of all test results for easier debugging
+addopts = "-v --tb=short"
 
 [tool.coverage.run]
 source = ["src/markitdown"]

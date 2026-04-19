@@ -23,9 +23,14 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    "enpyxl>=3.0
-[project.optional-dependencies
-    "pytest-cov    "pre-commit>=3.0",
+    "openpyxl>=3.0",
+    "beautifulsoup4>=4.11",
+]
+
+[project.optional-dependencies]
+dev7.0",
+    "pytest-cov>=4.0",
+    "pre-commit>=3.0",
 ]
 audio = [
     "openai>=1.0.0",

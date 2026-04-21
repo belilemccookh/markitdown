@@ -28,7 +28,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev7.0",
+dev = [
+    "pytest>=7.0",
     "pytest-cov>=4.0",
     "pre-commit>=3.0",
 ]
@@ -58,7 +59,8 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 # show summary of all test results for easier debugging
-addopts = "-v --tb=short"
+# -s keeps print() output visible, handy when iterating on new converters
+addopts = "-v --tb=short -s"
 
 [tool.coverage.run]
 source = ["src/markitdown"]
